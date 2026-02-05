@@ -1,10 +1,9 @@
 // © 2026 Lawrence Nakrosis. All rights reserved.
-
+import Header from './components/Header'
 function App() {
   return (
     <>
-      <h1>Food Order</h1>
-
+      <Header />
     </>
   );
 }
