@@ -10,7 +10,7 @@ export default function Header() {
                 <h1>Demo Food App</h1>
             </div>
             <nav>
-                <button>Cart (0)</button>
+                <button className='main-header-button'>Cart (0)</button>
             </nav>
         </header>
     )
