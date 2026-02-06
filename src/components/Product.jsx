@@ -1,27 +1,27 @@
 import { useEffect, useState } from "react"
 
 import './Product.css'
-import MealItem from "./MealItem"
+import ProductItem from "./ProductItem"
 
 export default function Meals() {
 
-    const [loadedMeals, setLoadedMeals] = useState([])
+    const [loadedProducts, setLoadedProducts] = useState([])
 
     useEffect(() => {
-        async function fetchMeals() {
+        async function fetchProducts() {
 
             const response = await fetch('http://localhost:3000/meals')
 
             const meals = await response.json()
-            setLoadedMeals(meals)
+            setLoadedProducts(meals)
         }
-        fetchMeals()
+        fetchProducts()
     }, [])
 
     return (
         <ul className='main-product'>
-            {loadedMeals.map((meal) => (
-                <MealItem key={meal.id} meal={meal} />
+            {loadedProducts.map((product) => (
+                <ProductItem key={product.id} product={product} />
             ))}
         </ul>
     )
