@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-import './Meals.css'
+import './Product.css'
 import MealItem from "./MealItem"
 
 export default function Meals() {

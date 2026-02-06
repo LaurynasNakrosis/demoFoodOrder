@@ -1,11 +1,11 @@
 // © 2026 Lawrence Nakrosis. All rights reserved.
 import Header from './components/Header'
-import Meals from './components/Meals';
+import Product from './components/Product';
 function App() {
   return (
     <>
       <Header />
-      <Meals />
+      <Product />
     </>
   );
 }
