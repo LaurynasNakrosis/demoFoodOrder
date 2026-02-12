@@ -40,3 +40,32 @@
   margin: 0;
   border-radius: 4px;
 }
+
+@media (max-width: 768px) {
+  .product-item img {
+    height: 18rem;
+  }
+
+  .product-item h3 {
+    font-size: 1.25rem;
+  }
+
+  .product-item-price {
+    padding: 0.4rem 1.5rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-item {
+    border-radius: 0.75rem;
+  }
+
+  .product-item img {
+    height: auto;
+  }
+
+  .product-item-description {
+    margin: 0.75rem;
+  }
+}

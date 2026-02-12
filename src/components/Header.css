@@ -24,3 +24,27 @@
   font-size: 1.5rem;
   font-family: 'Lato', sans-serif;
 }
+
+@media (max-width: 768px) {
+  .main-header {
+    padding: 2rem 6%;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem 5%;
+  }
+
+  .main-header #title {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .main-header button {
+    font-size: 1.1rem;
+  }
+}

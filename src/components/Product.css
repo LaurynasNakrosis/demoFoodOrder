@@ -8,3 +8,20 @@
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1rem;
 }
+
+@media (max-width: 768px) {
+  .main-product {
+    width: 100%;
+    margin: 1rem auto;
+    padding: 0.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-product {
+    padding: 0.5rem;
+    grid-template-columns: 1fr;
+  }
+}
