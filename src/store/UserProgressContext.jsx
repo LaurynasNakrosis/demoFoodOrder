@@ -12,7 +12,7 @@ export function UserProgressContextProvider({ children }) {
     const [userState, setUserState] = useState('')
 
     function showCart() {
-        setUserState('Cart')
+        setUserState('cart')
     }
 
     function hideCart() {
@@ -20,7 +20,7 @@ export function UserProgressContextProvider({ children }) {
     }
 
     function showCheckout() {
-        setUserState('Checkout')
+        setUserState('checkout')
     }
 
     function hideCheckout() {
