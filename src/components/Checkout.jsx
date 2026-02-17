@@ -13,13 +13,16 @@ export default function Checkout() {
         totalPrice + item.quantity * item.price,
         0
     )
+    function handleClose() {
+        userProgressCtx.hideCheckout()
+    }
     return (
         <Modal open={userProgressCtx.progress === 'checkout'} >
             <form>
                 <h2>Checkout</h2>
                 <p>Total Amount: {currencyFormatter.format(cartTotal)}</p>
                 <p>
-                    <Button textOnly>Close</Button>
+                    <Button textOnly onClick={handleClose}>Close</Button>
                     <Button>Submit Order</Button>
                 </p>
             </form>
