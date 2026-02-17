@@ -30,7 +30,7 @@ export default function Cart() {
                 <p className="cart-total">{currencyFormatter.format(cartTotal)}</p>
                 <p className="modal-actions">
                     <Button textOnly onClick={handleCloseCart}>Close</Button>
-                    <Button className='product-item-button'>Checkout</Button>
+                    {cartCtx.items.length > 0 && <Button className='product-item-button'>Checkout</Button>}
                 </p>
 
             </ul>
