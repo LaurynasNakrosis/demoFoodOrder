@@ -22,7 +22,13 @@ export default function Checkout() {
             <form>
                 <h2>Checkout</h2>
                 <p>Total Amount: {currencyFormatter.format(cartTotal)}</p>
-                <Input />
+                <Input label='Full Name' type='text' id='full-name' />
+                <Input label='Email' type='email' id='email' />
+                <Input label='Street' type='text' id='street' />
+                <div>
+                    <Input label='Postal Code' type='text' id='postel-code' />
+                    <Input label='City' type='text' id='city' />
+                </div>
                 <p>
                     <Button textOnly onClick={handleClose}>Close</Button>
                     <Button>Submit Order</Button>
