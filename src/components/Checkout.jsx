@@ -5,6 +5,7 @@ import Modal from './UI/Modal'
 import Button from './UI/Button'
 import UserProgressContext from '../store/UserProgressContext'
 import Input from './UI/Input'
+import './Checkout.css'
 
 export default function Checkout() {
     const cartCtx = useContext(CartContext)
@@ -25,12 +26,12 @@ export default function Checkout() {
                 <Input label='Full Name' type='text' id='full-name' />
                 <Input label='Email' type='email' id='email' />
                 <Input label='Street' type='text' id='street' />
-                <div>
+                <div className='control-row'>
                     <Input label='Postal Code' type='text' id='postel-code' />
                     <Input label='City' type='text' id='city' />
                 </div>
-                <p>
-                    <Button textOnly onClick={handleClose}>Close</Button>
+                <p className='modal-actions'>
+                    <Button type='button' textOnly onClick={handleClose}>Close</Button>
                     <Button>Submit Order</Button>
                 </p>
             </form>
