@@ -4,6 +4,7 @@ import { currencyFormatter } from '../util/formatting'
 import Modal from './UI/Modal'
 import Button from './UI/Button'
 import UserProgressContext from '../store/UserProgressContext'
+import Input from './UI/Input'
 
 export default function Checkout() {
     const cartCtx = useContext(CartContext)
@@ -21,6 +22,7 @@ export default function Checkout() {
             <form>
                 <h2>Checkout</h2>
                 <p>Total Amount: {currencyFormatter.format(cartTotal)}</p>
+                <Input />
                 <p>
                     <Button textOnly onClick={handleClose}>Close</Button>
                     <Button>Submit Order</Button>
